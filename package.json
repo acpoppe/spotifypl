@@ -16,6 +16,10 @@
     "url": "https://github.com/acpoppe/spotifypl/issues",
     "email": "allisonpoppe89@gmail.com"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/acpoppe/spotifypl.git"
+  },
   "author": "Allison Poppe",
   "homepage": "https://github.com/acpoppe",
   "license": "MIT",
