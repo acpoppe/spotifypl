@@ -1,0 +1,22 @@
+{
+  "name": "spotifypl",
+  "version": "1.0.0",
+  "description": "A spotify playlist library",
+  "main": "spotifypl.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "Spotify",
+    "Playlist",
+    "Music",
+    "Metadata"
+  ],
+  "author": "Allison Poppe",
+  "homepage": "https://github.com/acpoppe",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "qs": "^6.10.1"
+  }
+}
