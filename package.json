@@ -1,6 +1,6 @@
 {
   "name": "spotifypl",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple spotify playlist library",
   "main": "spotifypl.js",
   "scripts": {
@@ -12,6 +12,10 @@
     "Music",
     "Metadata"
   ],
+  "bugs": {
+    "url": "https://github.com/acpoppe/spotifypl/issues",
+    "email": "allisonpoppe89@gmail.com"
+  },
   "author": "Allison Poppe",
   "homepage": "https://github.com/acpoppe",
   "license": "MIT",
