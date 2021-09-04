@@ -1,7 +1,7 @@
 {
   "name": "spotifypl",
   "version": "1.0.0",
-  "description": "A spotify playlist library",
+  "description": "A simple spotify playlist library",
   "main": "spotifypl.js",
   "scripts": {
     "test": "test"
