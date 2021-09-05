@@ -36,7 +36,7 @@ const main = module.exports = async function (playlistId, clientId, clientSecret
  */
 main.validatePublicPlaylistURL = async function (url, clientId, clientSecret) {
     let isPlaylistURL = false;
-    const regex = /(spotify.com\/playlist\/){1}([a-zA-Z0-9]+){1}?/;
+    const regex = /^(?:http:\/\/|https:\/\/)?(open.spotify.com\/playlist\/){1}([a-zA-Z0-9]+){1}?/;
     isPlaylistURL = url.match(regex);
     if (isPlaylistURL === null) {
         return false;
@@ -85,7 +85,7 @@ main.validatePublicPlaylistId = async function (id, clientId, clientSecret) {
  * Gets the playlist ID given in the Spotify link
  */
 main.getIdFromURL = function (url) {
-    const regex = /(spotify.com\/playlist\/){1}([a-zA-Z0-9]+){1}?/;
+    const regex = /^(?:http:\/\/|https:\/\/)?(open.spotify.com\/playlist\/){1}([a-zA-Z0-9]+){1}?/;
     let regexResults = url.match(regex);
     if (regexResults === null) {
         throw new Error("spotifypl: Invalid URL");
