@@ -101,7 +101,7 @@ To get a local copy up and running follow these simple steps.
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-### async spotifypl(playlistId, clientId, clientSecret, [Options])
+### async spotifypl(playlistId, clientId, clientSecret, [options])
 
 `playlistId` - The ID of the playlist taken from the URL or returned from `getIdFromURL`
 
@@ -109,8 +109,10 @@ To get a local copy up and running follow these simple steps.
 
 `clientSecret` - The Client Secret obtained by registering your application with Spotify
 
-`Options` - Currently not used, but coming in the future
+`options` - Currently not used, but coming in the future
 
+Returns: `playlistResults` - The results from Spotify's API
+<br />
 
 ### async spotifypl.validatePublicPlaylistURL(playlistURL, clientId, clientSecret)
 
@@ -120,6 +122,8 @@ To get a local copy up and running follow these simple steps.
 
 `clientSecret` - The Client Secret obtained by registering your application with Spotify
 
+Returns: `urlIsValid` - Boolean indicating whether or not the URL is a valid playlist URL
+<br />
 
 ### async spotifypl.validatePublicPlaylistId(playlistId, clientId, clientSecret)
 
@@ -129,10 +133,14 @@ To get a local copy up and running follow these simple steps.
 
 `clientSecret` - The Client Secret obtained by registering your application with Spotify
 
+Returns: `idIsValid` - Boolean indicating whether or not the ID is a valid playlist ID
+<br />
 
 ### spotifypl.getIdFromURL(playlistURL)
 
 `playlistURL` - The URL of the playlist
+
+Returns: `playlistId` - The ID of the playlist
 
 
 
