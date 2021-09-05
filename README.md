@@ -22,13 +22,8 @@
   <h3 align="center">spotifypl</h3>
 
   <p align="center">
-    A music bot for Discord!
+    A simple spotify playlist library
     <br />
-    <a href="https://github.com/acpoppe/spotifypl"><strong>Explore the docs » (Someday)</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/acpoppe/spotifypl">View Demo (Someday)</a>
-    ·
     <a href="https://github.com/acpoppe/spotifypl/issues">Report Bug</a>
     ·
     <a href="https://github.com/acpoppe/spotifypl/issues">Request Feature</a>
@@ -96,7 +91,7 @@ To get a local copy up and running follow these simple steps.
    ```sh
    cd /somePath/ToYourProject
    ```
-3. Install NPM
+3. Install from NPM
    ```sh
    npm install spotifypl
    ```
@@ -106,9 +101,38 @@ To get a local copy up and running follow these simple steps.
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-<!-- Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources. -->
+### async spotifypl(playlistId, clientId, clientSecret, [Options])
 
-_For more examples, please refer to the [Documentation](https://allisonpoppe.com)_ (Documentation to come in the future)
+`playlistId` - The ID of the playlist taken from the URL or returned from `getIdFromURL`
+
+`clientId` - The Client ID obtained by registering your application with Spotify
+
+`clientSecret` - The Client Secret obtained by registering your application with Spotify
+
+`Options` - Currently not used, but coming in the future
+
+
+### async spotifypl.validatePublicPlaylistURL(playlistURL, clientId, clientSecret)
+
+`playlistURL` - The URL of the playlist
+
+`clientId` - The Client ID obtained by registering your application with Spotify
+
+`clientSecret` - The Client Secret obtained by registering your application with Spotify
+
+
+### async spotifypl.validatePublicPlaylistId(playlistId, clientId, clientSecret)
+
+`playlistId` - The ID of the playlist taken from the URL or returned from `getIdFromURL`
+
+`clientId` - The Client ID obtained by registering your application with Spotify
+
+`clientSecret` - The Client Secret obtained by registering your application with Spotify
+
+
+### spotifypl.getIdFromURL(playlistURL)
+
+`playlistURL` - The URL of the playlist
 
 
 

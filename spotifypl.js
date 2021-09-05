@@ -23,9 +23,9 @@ const main = module.exports = async function (playlistId, clientId, clientSecret
         });
     } catch (e) {
         if (e.response.status === 400) {
-            throw new Error("Bad client credentials");
+            throw new Error("spotifypl: Bad client credentials");
         } else if (e.response.status === 404) {
-            throw new Error("Playlist not found");
+            throw new Error("spotifypl: Playlist not found");
         }
     }
     return results;
@@ -72,7 +72,7 @@ main.validatePublicPlaylistId = async function (id, clientId, clientSecret) {
         isPlaylist = true;
     } catch (e) {
         if (e.response.status === 400) {
-            throw new Error("Bad client credentials");
+            throw new Error("spotifypl: Bad client credentials");
         } else if (e.response.status === 404) {
             isPlaylist = false;
         }
@@ -88,7 +88,7 @@ main.getIdFromURL = function (url) {
     const regex = /(spotify.com\/playlist\/){1}([a-zA-Z0-9]+){1}?/;
     let regexResults = url.match(regex);
     if (regexResults === null) {
-        throw new Error("Invalid URL");
+        throw new Error("spotifypl: Invalid URL");
     }
 
     return regexResults[2];
@@ -111,7 +111,7 @@ async function authenticate(clientId, clientSecret) {
         });
     } catch (e) {
         if (e.response.status === 400) {
-            throw new Error("Bad client credentials");
+            throw new Error("spotifypl: Bad client credentials");
         }
     }
 }
